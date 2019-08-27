@@ -2,28 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
         <title>Contacts</title>
     </head>
     <body>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="contacts.html">Контакты</a>
+        <div id="menu_links">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
         <hr>
         <h3>Напишите нам</h3>
         <hr>
-        <form action="my_form.html" method="get">
-            <input name="user" type="text" placeholder="Имя"><br>
+        <form id="myForm" action="my_form.html" method="get">
+            <input name="user" type="text" placeholder="имя"><br>
             <br>
             <input name="user_email" type="email" placeholder="email"><br>
             <br>
             <input name="user_phone" type="number" placeholder="контактный телефон"><br>
             <br>
-            <input name="message_theme" type="text" placeholder="Тема сообщения"><br>
+            <input name="message_theme" type="text" placeholder="тема сообщения"><br>
             <br>
             <textarea name="textAreaContent" placeholder="ваше сообщение" maxlength="250"></textarea><br>
             <button>Отправить</button><br>
         </form>
-
 
         <fieldset>
             <legend>Наши контакты:</legend>
