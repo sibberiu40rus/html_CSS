@@ -28,7 +28,7 @@ footer {
 }
 #heading {
     text-align: left;
-    font-family: Calligraph;
+    font-family: Calligraph, sans-serif;
     font-size: 24px;
     color: lightpink;
     text-shadow: red 1px 0px, red 1px 1px, red 0px 1px, red -1px 1px, red -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px;
@@ -83,7 +83,7 @@ footer {
     font-size: 24px;
     font-style: italic;
     line-height: 32px;
-    font-family: Calligraph;
+    font-family: Calligraph, sans-serif;
     margin-left: 370px;
 }
 #text_detailed_description{
@@ -202,14 +202,5 @@ src: url("fonts/Calligraph.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-
-/*1 На всех страницах создать родительский блок с классом container, задать значение ширины и*/
-/*расположить блок по центру экрана, все содержимое страниц писать внутри этого контейнера.*/
-/*6 Доделать то, что не успели в прошлых уроках.*/
-/*7 *Расположить элементы на ваше усмотрение.*/
-/*8 *Страница контактов:*/
-/*  a. Ширина карты 100%,*/
-/*b. Высота карты 374px.*/
-/*9 *Добавить фоновые изображения для header на каждой странице.*/
 
 
