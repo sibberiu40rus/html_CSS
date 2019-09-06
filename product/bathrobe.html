@@ -7,55 +7,52 @@
     </head>
     <body>
         <header>
-            <img id="icon_give_warm" src="../images/style/give_warm.png" alt="дари тепло" ><br>
-            <div id="menu_links">
-                <a href="../index.html">Главная</a>
-                <a href="../catalog.html">Каталог</a>
-                <a href="../contacts.html">Контакты</a>
+            <div class="container headerContainer">
+                <img id="icon_give_warm" src="../images/style/give_warm.png" alt="дари тепло" ><br>
+                <div id="menu_links">
+                    <a href="../index.html">Главная</a>
+                    <a href="../catalog.html">Каталог</a>
+                    <a href="../contacts.html">Контакты</a>
+                </div>
             </div>
         </header>
-        <hr>
-
-        <h1>Именной халат с вышивкой</h1>
-        <hr>
-        <a href="../images/product/bathrobe_men.jpg" target="_blank">
-            <img id="image_product" src="../images/product/bathrobe_men.jpg" alt="Именной халат с вышивкой" width="400" height="400">
-        </a>
-
-        <fieldset>
-            <legend id="product_description">Описание:</legend>
-            <p id="text_product_description">Длинный халат с поясом, воротником-шалькой и накладными карманами.</p><br>
-        </fieldset>
-
-        <fieldset>
-            <legend id="specification">Характеристики:</legend>
-            <ul id="text_specification">
-                <li>Бесплатная подарочная упаковка</li>
-                <li>Индивидуальный дизайн.</li>
-                <li>Не красится и не линяет</li>
-                <li>Доставка по всей России</li>
-                <li>Материал: 100% хлопок (двухсторонняя махра)</li>
-                <li>Плотность: 350 г/м2</li>
-            </ul>
-        </fieldset>
-
-        <fieldset>
-            <legend id="detailed_description">Подробное описание:</legend>
-            <p id="text_detailed_description">
-                Махровое полотно создается из&nbsp;хлопковых нитей, которые, в&nbsp;свою очередь, прядутся из&nbsp;множества хлопковых волокон.<br>
-                Чем длиннее эти волокна, тем прочнее будет нить, и, соответственно, изделие.<br>
-                Длина составляющих хлопковую нить волокон влияет и&nbsp;на&nbsp;фактуру получаемой ткани:<br>
-                чем они длиннее, тем мягче и&nbsp;пушистее получится махровое изделие, тем лучше будет впитывать изделие воду.<br>
-                Хотя на&nbsp;впитывающие качество махры&nbsp;&mdash; ее&nbsp;гигроскопичность, не&nbsp;в&nbsp;последнюю очередь влияет состав волокна.<br>
-                Мягкая махровая ткань отлично впитывает влагу и&nbsp;быстро сохнет.
-            </p>
-
-        </fieldset>
-
-
-        <hr>
+        <div class="container contentContainer">
+            <h1>Именной халат с вышивкой</h1>
+            <hr>
+            <div class="product">
+                <a href="../images/product/bathrobe_men.jpg" target="_blank">
+                    <img id="image_product" src="../images/product/bathrobe_men.jpg" alt="Именной халат с вышивкой">
+                </a>
+                <p id="text_product_description">Длинный халат с поясом, воротником-шалькой и накладными карманами.</p>
+                <button id="buy_btn">купить</button>
+            </div>
+            <fieldset>
+                <legend id="specification">Характеристики:</legend>
+                <ul id="text_specification">
+                    <li>Бесплатная подарочная упаковка</li>
+                    <li>Индивидуальный дизайн.</li>
+                    <li>Не красится и не линяет</li>
+                    <li>Доставка по всей России</li>
+                    <li>Материал: 100% хлопок (двухсторонняя махра)</li>
+                    <li>Плотность: 350 г/м2</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend id="detailed_description">Подробное описание:</legend>
+                <p id="text_detailed_description">
+                    Махровое полотно создается из&nbsp;хлопковых нитей, которые, в&nbsp;свою очередь, прядутся из&nbsp;множества хлопковых волокон.<br>
+                    Чем длиннее эти волокна, тем прочнее будет нить, и, соответственно, изделие.<br>
+                    Длина составляющих хлопковую нить волокон влияет и&nbsp;на&nbsp;фактуру получаемой ткани:<br>
+                    чем они длиннее, тем мягче и&nbsp;пушистее получится махровое изделие, тем лучше будет впитывать изделие воду.<br>
+                    Хотя на&nbsp;впитывающие качество махры&nbsp;&mdash; ее&nbsp;гигроскопичность, не&nbsp;в&nbsp;последнюю очередь влияет состав волокна.<br>
+                    Мягкая махровая ткань отлично впитывает влагу и&nbsp;быстро сохнет.
+                </p>
+            </fieldset>
+        </div>
         <footer>
-            &copy;Все права защищены!
+            <div class="container footerContainer">
+                &copy;Все права защищены!
+            </div>
         </footer>
     </body>
 </html>

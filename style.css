@@ -1,10 +1,34 @@
 
 body{
-    background: #fffdf1;
+    background: #f8f8f8;
+    margin: 0;
+}
+body h3{
+    font-size: 30px;
+}
+header{
+    /*background: #eacb8b;*/
+    background-image: url("images/background/backgroundHeader_2.jpg");
+}
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background-image: url("images/background/warm_background.jpg");
+    width: 100%;
+    height: 15px;
+    text-align: right;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.contentContainer {
+    margin-bottom: 40px;
 }
 #heading {
     text-align: left;
-    font-family: myFont;
+    font-family: Calligraph;
     font-size: 24px;
     color: lightpink;
     text-shadow: red 1px 0px, red 1px 1px, red 0px 1px, red -1px 1px, red -1px 0px, red -1px -1px, red 0px -1px, red 1px -1px;
@@ -24,6 +48,8 @@ body{
     position: relative;
     left: 70px;
     bottom: 35px;
+    text-align: right;
+    margin-right: 50px;
 }
 #icon_give_warm{
     border: 1px solid #8d372f;
@@ -31,17 +57,16 @@ body{
 }
 #menu_links a{
     text-decoration: none;
-    color: #eaeaea;
-    border: 2px solid #348d58;
+    color: #b48367;
+    border: 2px solid #a8a377;
     border-radius: 8px;
     padding: 2px;
-    background: repeating-linear-gradient(to bottom right,rgb(0, 196, 244) 0%,rgb(3, 96, 120) 100%);;
+    background-image: url("images/background/warm_background.jpg");
 }
 #menu_links a:hover {
-    color: #eacb8b;
+    color: #9e3e2f;
     border: 2px solid #8d372f;
     border-radius: 8px;
-
 }
 #product_description, #specification, #detailed_description{
     font-family: Arial, serif;
@@ -55,9 +80,11 @@ body{
 }
 #text_product_description{
     color: #707070;
-    font-size: 14px;
+    font-size: 24px;
     font-style: italic;
-    line-height: 16px;
+    line-height: 32px;
+    font-family: Calligraph;
+    margin-left: 370px;
 }
 #text_detailed_description{
     color: #484343;
@@ -74,18 +101,25 @@ body{
 }
 #image_product {
     border: 2px solid #596152;
+    border-radius: 5px;
+    float: left;
+    width: 350px;
+    height: 350px;
 }
 #mini_image_product img {
-    border: 2px solid #596152;
 }
 #myForm input{
     font-family: Arial, serif;
     text-transform: capitalize;
+    position: relative;
+    left: 40%;
     color: #3c6b2a;
     width:20%;
     height: 20px;
     font-size: 16px;
     text-align: center;
+    border: 1px solid #c9b8ad;
+    border-radius: 15px;
 }
 #myForm [type=email]:focus-within{
     color: #1a256b;
@@ -94,27 +128,88 @@ body{
 #myForm textarea{
     font-family: Tahoma, sans-serif;
     color: #6b1517;
+    position: relative;
+    left: 40%;
     width:20%;
     height: 40px;
     font-size: 16px;
+    text-align: center;
+    border: 1px solid #c9b8ad;
+    border-radius: 15px;
 }
-footer {
-    position: fixed;
-    left: 0; bottom: 0;
-    padding: 10px;
-    /*background: #c78b38;*/
-    background-image: url("images/background/warm_background.jpg");
+#send_btn {
+    position: relative;
+    left: 47%;
+    border: 1px solid #cbb89c;
+    border-radius: 10px;
+}
+#send_btn:hover {
+    color: #8a714c;
+    border: 1px solid #8d372f;
+    border-radius: 10px;
+}
+#buy_btn {
+    border: 1px solid #cbb89c;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    margin-left: 20px;
+}
+#buy_btn:hover {
+    color: #8a714c;
+    border: 1px solid #8d372f;
+    border-radius: 10px;
+}
+#buy_btn:active {
+    color: #8a362c;
+    border: 1px solid #8d372f;
+    border-radius: 10px;
+    background: #6b6a5e;
+}
+#typing_us{
+    text-align: center;
+}
+.footerContainer {
+    margin-top: 4px;
+}
+.productUnit {
+    width: 30%;
+    float: left;
+    height: 200px;
+}
+.productUnit:not(:nth-child(3n)) {
+    margin-right: 5%;
+}
+.productUnit:nth-child(n+4) {
+    margin-top: 20px;
+}
+.productContainer {
+    overflow: hidden;
+}
+.product {
+    height: 380px;
+}
+#mapYandex {
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
+    height: 380px;
 }
-body h3{
-    font-family: myFont;
-    font-size: 30px;
-}
+
 @font-face {
-font-family: "myFont";
-src: url("fonts/myFont.ttf") format("truetype");
+font-family: "Calligraph";
+src: url("fonts/Calligraph.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
+/*1 На всех страницах создать родительский блок с классом container, задать значение ширины и*/
+/*расположить блок по центру экрана, все содержимое страниц писать внутри этого контейнера.*/
+/*6 Доделать то, что не успели в прошлых уроках.*/
+/*7 *Расположить элементы на ваше усмотрение.*/
+/*8 *Страница контактов:*/
+/*  a. Ширина карты 100%,*/
+/*b. Высота карты 374px.*/
+/*9 *Добавить фоновые изображения для header на каждой странице.*/
 
 

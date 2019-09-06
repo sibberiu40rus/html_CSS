@@ -7,48 +7,47 @@
     </head>
     <body>
         <header>
-            <img id="icon_give_warm" src="../images/style/give_warm.png" alt="дари тепло" ><br>
-            <div id="menu_links">
-                <a href="../index.html">Главная</a>
-                <a href="../catalog.html">Каталог</a>
-                <a href="../contacts.html">Контакты</a>
+            <div class="container headerContainer">
+                <img id="icon_give_warm" src="../images/style/give_warm.png" alt="дари тепло" ><br>
+                <div id="menu_links">
+                    <a href="../index.html">Главная</a>
+                    <a href="../catalog.html">Каталог</a>
+                    <a href="../contacts.html">Контакты</a>
+                </div>
             </div>
         </header>
-        <hr>
-
-        <h1>Плюшевый кот для авто</h1>
-        <hr>
-        <a href="../images/product/plush_cat.jpg" target="_blank">
-            <img id="image_product" src="../images/product/plush_cat.jpg" alt="Милый котик с Вашим текстом" width="400">
-        </a>
-
-        <fieldset>
-            <legend id="product_description">Описание:</legend>
-            <p id="text_product_description">Милый котик с Вашим текстом.</p> <br>
-        </fieldset>
-
-        <fieldset>
-            <legend id="specification">Характеристики:</legend>
-            <ul id="text_specification">
-                <li>Бесплатная подарочная упаковка</li>
-                <li>Индивидуальный дизайн.</li>
-                <li>Доставка по всей России</li>
-                <li>Наполнитель: холлофайбер</li>
-            </ul>
-        </fieldset>
-
-        <fieldset>
-            <legend id="detailed_description">Подробное описание:</legend>
-            <p id="text_detailed_description">
-                Милый и&nbsp;позитивный котик в&nbsp;машину на&nbsp;присосках, с&nbsp;веселой и&nbsp;интересной надписью на&nbsp;пузике.<br>
-                Любая Ваша надпись под заказ! Отличного качества, ручной работы!<br>
-                Порадует всех окружающих водителей.<br>
-            </p>
-        </fieldset>
-
-        <hr>
+        <div class="container contentContainer">
+            <h1>Плюшевый кот для авто</h1>
+            <hr>
+            <div class="product">
+                <a href="../images/product/plush_cat.jpg" target="_blank">
+                    <img id="image_product" src="../images/product/plush_cat.jpg" alt="Милый котик с Вашим текстом" width="400">
+                </a>
+                <p id="text_product_description">Милый котик с Вашим текстом.</p>
+                <button id="buy_btn">купить</button>
+            </div>
+            <fieldset>
+                <legend id="specification">Характеристики:</legend>
+                <ul id="text_specification">
+                    <li>Бесплатная подарочная упаковка</li>
+                    <li>Индивидуальный дизайн.</li>
+                    <li>Доставка по всей России</li>
+                    <li>Наполнитель: холлофайбер</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend id="detailed_description">Подробное описание:</legend>
+                <p id="text_detailed_description">
+                    Милый и&nbsp;позитивный котик в&nbsp;машину на&nbsp;присосках, с&nbsp;веселой и&nbsp;интересной надписью на&nbsp;пузике.<br>
+                    Любая Ваша надпись под заказ! Отличного качества, ручной работы!<br>
+                    Порадует всех окружающих водителей.<br>
+                </p>
+            </fieldset>
+        </div>
         <footer>
-            &copy;Все права защищены!
+            <div class="container footerContainer">
+                &copy;Все права защищены!
+            </div>
         </footer>
     </body>
 </html>
